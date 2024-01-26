@@ -1,0 +1,19 @@
+.container {
+  grid-row: 2 / 3;
+  grid-column: 2 /3;
+  background-color: #343434;
+  color: #d7dadc;
+  border: 1px solid #d7dadc;
+  border-radius: 15px;
+  padding: 15px;
+  height: 100vh;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.subreddit {
+  text-decoration: underline;
+  font-weight: 800;
+}
