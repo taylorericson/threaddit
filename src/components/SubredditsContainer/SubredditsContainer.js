@@ -10,6 +10,8 @@ import Subreddit from "../../features/subreddits/Subreddit";
 const SubredditsContainer = () => {
   const dispatch = useDispatch();
   const subreddits = useSelector(selectSubreddits);
+  const defaultIcon =
+    "https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_reddit-512.png";
 
   useEffect(() => {
     dispatch(fetchSubreddits());
@@ -19,16 +21,13 @@ const SubredditsContainer = () => {
     <div className={styles.container}>
       <h2>Popular Subreddits</h2>
       <ul>
-        {subreddits.map((sub, id) => {
+        {subreddits.slice(0, 14).map((sub, id) => {
           return (
             <Subreddit
-              id={id}
+              key={id}
               name={sub.display_name_prefixed}
-              icon={sub.icon_img}
+              icon={sub.icon_img || defaultIcon}
             />
-            // <li key={id} className={styles.subreddit}>
-            //   {sub.display_name_prefixed}
-            // </li>
           );
         })}
       </ul>

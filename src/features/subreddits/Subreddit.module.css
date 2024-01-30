@@ -1,0 +1,23 @@
+.listItem {
+  display: flex;
+  padding: 10px;
+}
+.subreddit {
+  font-weight: 500;
+  font-size: 1rem;
+  height: 30px;
+  cursor: pointer;
+  width: 80%;
+}
+
+.subreddit:hover {
+  color: #ffa6a6;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 10px;
+}
