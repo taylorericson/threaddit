@@ -7,13 +7,15 @@
   border-radius: 15px;
   padding: 15px;
   height: 100vh;
+  margin: 0;
 }
 
-.container h2 {
+.contaier h2 {
   text-align: center;
+  font-weight: 800;
 }
 
 .subreddit {
   text-decoration: underline;
-  font-weight: 800;
+  text-decoration-style: none;
 }
