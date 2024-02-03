@@ -25,3 +25,7 @@ ul {
   text-decoration: underline;
   text-decoration-style: none;
 }
+
+.loading {
+  font-size: 2rem;
+}
